@@ -1,6 +1,6 @@
 {
-  "name": "open-south-pwa",
-  "short_name": "open-south-pwa",
+  "name": "OpenSouthPwa",
+  "short_name": "OSPWA",
   "theme_color": "#eb532a",
   "background_color": "#fafafa",
   "display": "standalone",
