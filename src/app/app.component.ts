@@ -28,8 +28,7 @@ export class AppComponent implements OnInit {
           } as TrendLink)
       });
     })
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+
 
   }
 }
