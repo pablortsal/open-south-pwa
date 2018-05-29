@@ -1,0 +1,26 @@
+.standard-nav{
+  width: 100vw;
+  position: relative;
+  height: 48px;
+  background-color: white;
+  box-shadow: 0 2px 2px hsla(0,0%,6.7%,.2);
+}
+
+.standard-nav > a > .logo{
+  height: 48px;
+  position: absolute;
+  left: 10px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.standard-nav > a > .link{
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.active{
+  display: none;
+}

@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="online-stauts" >
+    <img src="assets/fuego.gif" style="display:block; margin:auto">
+    <p *ngIf="!online">Vaya! No tienes conexión, pero no te preocupes esto es una <b>PWA</b></p>
+</div>
+
+<div style="text-align:center">
+  <h1>Trending <br> Right NOW!
+
+  </h1>
+
+  <a *ngFor="let trend of trends" href={{trend.url}}>
+    <h2> {{trend.title}}</h2>
+  </a>
+</div>

@@ -1,39 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component, OnInit } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent implements OnInit {
-  title = 'app';
-  trends:TrendLink[] = [];
-
-  constructor(private httpService:HttpClient){}
-
-  ngOnInit(): void {
-
-
-    this.httpService.get(
-      "https://www.reddit.com/r/trendingsubreddits.json",
-
-    )
-    .subscribe((res:any) =>{
-      res.data.children[0].data.title.split(':')[1].split(',').forEach(element => {
-        let aux = element.replace(/ /g, '');
-          this.trends.push({
-              title:aux,
-              url: "https://www.reddit.com"+aux
-          } as TrendLink)
-      });
-    })
-
-
+export class AppComponent{
+  constructor(private router:Router){
   }
-}
 
-export interface TrendLink{
-  title:string;
-  url:string;
+  about(){
+    this.router.navigate(['/about'])
+  }
 }

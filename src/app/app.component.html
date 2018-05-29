@@ -1,7 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <img src="assets/reddit-banner.jpg" style="width:40vh; height:auto">
-  <a *ngFor="let trend of trends" href={{trend.url}}>
-    <h2> {{trend.title}}</h2>
+<div class="standard-nav">
+  <a [routerLink]="'/'" [routerLinkActive]="'active-logo'">
+    <img class="logo" src="assets/reddit-banner.jpg">
+  </a>
+  <a [routerLink]="'/about'" [routerLinkActive]="'active'">
+    <img class="link" src="assets/icon.svg">
   </a>
 </div>
+<router-outlet></router-outlet>

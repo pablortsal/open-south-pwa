@@ -1,0 +1,19 @@
+.share{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.share > img{
+  width: 40vw;
+  max-width: 40vh;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.share > a{
+  text-align: center;
+  width: 100%;
+}
