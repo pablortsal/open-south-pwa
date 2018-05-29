@@ -20,5 +20,17 @@
         "/assets/**"
       ]
     }
+  }],
+  "dataGroups": [{
+    "name": "api-freshness",
+    "urls": [
+      "/**"
+    ],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "1h",
+      "timeout": "3s",
+      "strategy": "freshness"
+    }
   }]
 }

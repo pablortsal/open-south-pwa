@@ -1,7 +1,7 @@
 {
   "name": "open-south-pwa",
   "short_name": "open-south-pwa",
-  "theme_color": "#1976d2",
+  "theme_color": "#eb532a",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
