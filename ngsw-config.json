@@ -13,7 +13,7 @@
     }
   }, {
     "name": "assets",
-    "installMode": "lazy",
+    "installMode": "prefetch",
     "updateMode": "prefetch",
     "resources": {
       "files": [
@@ -22,7 +22,7 @@
     }
   }],
   "dataGroups": [{
-    "name": "api-freshness",
+    "name": "api-performance",
     "urls": [
       "/**"
     ],
@@ -30,7 +30,7 @@
       "maxSize": 100,
       "maxAge": "1h",
       "timeout": "3s",
-      "strategy": "freshness"
+      "strategy": "performance"
     }
   }]
 }
