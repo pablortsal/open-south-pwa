@@ -18,8 +18,7 @@ export class AppComponent implements OnInit {
           "BNxG_IG_yh3Jqc3q88aXEmnUZsnRfABIb5waaRnc5OGmB3e7uWJmQKGcH_vjzbe9t6H7DUv79FtfZhTtME65vVc"
       })
       .then((pushSubscription: PushSubscription) => {
-        console.log(pushSubscription.getKey('auth'));
-        console.log(pushSubscription.getKey('p256dh'));
+        console.log(pushSubscription.toJSON());
         console.log(pushSubscription.endpoint);
       });
   }
